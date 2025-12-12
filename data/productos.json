@@ -1,0 +1,8 @@
+[
+  {"id": "1", "nombre": "Producto 1", "precio": 1350, "img": "img/lux-lunar-empress.jpg"},
+  {"id": "2", "nombre": "Producto 2", "precio": 1350, "img": "img/lux-star-guardian.jpg"},
+  {"id": "3", "nombre": "Producto 3", "precio": 1300, "img": "img/lux-panda-pal.jpg"},
+  {"id": "4", "nombre": "Producto 4", "precio": 750, "img": "img/lux-spellthief.jpg"},
+  {"id": "5", "nombre": "Producto 5", "precio": 500, "img": "img/lux-sorceress.jpg"},
+  {"id": "6", "nombre": "Producto 6", "precio": 950, "img": "img/lux-imperial.jpg"}
+]

@@ -54,8 +54,12 @@ body{
 
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
 }
+
+/*-------------------------------------------------------------------------
+                            HOME
+--------------------------------------------------------------------------*/
 
 .main{
     width: 90%;
@@ -114,6 +118,49 @@ body{
     border-radius: 0.5rem;
 }
 
+.btn {
+  background: whitesmoke;
+  color: #2a1e35;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1.6rem;
+  border-radius: 1rem;
+}
+
 .footer{
+    padding: 1rem;
     background-color:#7b4fff;
+    color: white;
+    text-decoration: none;
+}
+/*-------------------------------------------------------------------------
+                            CONTACTO
+--------------------------------------------------------------------------*/
+.titulo-contacto{
+    margin-bottom: 2rem;
+}
+.form-contacto {
+  background-color: #8a79a8;
+  color: #2a1e35;
+  width: 100%;
+  max-width: 50rem;
+  font-size: 2rem;
+  padding: 3rem;
+  border-radius: 1rem;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.campo-form input, 
+.campo-form textarea {
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 2px #2a1e35;
+  margin-bottom: 3rem;
+}
+
+.campo-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
 }
