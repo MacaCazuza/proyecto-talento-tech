@@ -9,92 +9,89 @@
 </head>
 
 <body>
-     <header class="header"> 
-            <p class="header-logo">
-                <a href="./index.html"><img src="./img/LUXLOGO.png" alt="LOGO"></a>
-            </p>
+    <header class="header"> 
+        <div class="header-logo">
+            <a href="./index.html"><img src="./img/LUXLOGO.png" alt="Logo de Lux Store"></a>
+        </div>
         <nav class="header-nav">
             <ul>
+                <li><a href="#best-seller">Best Seller</a></li>
+                <li><a href="#cheapest">Cheapest</a></li>
                 <li>
-                    <a href="./">Best Seller</a>
+                    <a href="./pages/carrito.html" class="carrito-icono">
+                        🛒 <span id="contador-carrito">0</span>
+                    </a>
                 </li>
-                <li>
-                    <a href="./">Cheapest</a>
-                </li>
-                </ul>
-        </nav></header>
+            </ul>
+        </nav>
+    </header>
 
- 
-        <main class="main">
-            <h1 class="titulo-home"> ¡Bienvenidos a Lux Store!</h1>
-            <p class="parrafo-home"> Vendemos skins y chromas de Lux. ¡Ahorra hasta 25% hoy!</p>
+    <main class="main">
+        <h1 class="titulo-home">¡Bienvenidos a Lux Store!</h1>
+        <p class="parrafo-home">Vendemos skins y chromas de Lux. ¡Ahorra hasta 25% hoy!</p>
 
-            <section class="productos-home">
-                <h2>Best Seller</h2>
+        <section class="productos-home" id="best-seller">
+            <h2>Best Seller</h2>
+            <div class="contenedor-skins">
+                <article class="skins-productos">
+                    <img src="./img/lux-lunar-empress.jpg" alt="Skin Lunar Empress Lux">
+                    <h3>Lunar Empress Lux</h3>
+                    <p>$1350</p>
+                    <button class="btn">Agregar al carrito</button>
+                </article>
 
-                <div class="contenedor-skins">
-                    <article class="skins-productos">
-                        <img src="./img/lux-lunar-empress.jpg" alt="Skin de Lunar Empress Lux">
-                        <h3>Lunar Empress Lux</h3>
-                        <p>$1350</p>
-                        <button class="btn">Agregar al carrito</button>
-                    </article>
+                <article class="skins-productos">
+                    <img src="./img/lux-star-guardian.jpg" alt="Skin Star Guardian Lux">
+                    <h3>Lux Star Guardian</h3>
+                    <p>$1350</p>
+                    <button class="btn">Agregar al carrito</button>
+                </article>
 
-                    <article class="skins-productos">
-                        <img src="./img/lux-star-guardian.jpg" alt="Soul Fighter Lux">
-                        <h3>Lux Star Guardian</h3>
-                        <p>$1350</p>
-                        <button class="btn">Agregar al carrito</button>
-                    </article>
+                <article class="skins-productos">
+                    <img src="./img/lux-panda-pal.jpg" alt="Skin Panda Pal Lux">
+                    <h3>Lux Panda Pal</h3>
+                    <p>$1350</p>
+                    <button class="btn">Agregar al carrito</button>
+                </article>
+            </div>
+        </section>
 
-                    <article class="skins-productos">
-                        <img src="./img/lux-panda-pal.jpg" alt="Skin de Lunar Em">
-                        <h3>Lux Panda Pal</h3>
-                        <p>$1350</p>
-                        <button class="btn">Agregar al carrito</button>
-                    </article>
-
-                </div>
-
+        <section class="productos-home" id="cheapest">
             <h2>Cheapest</h2>
+            <div class="contenedor-skins">
+                <article class="skins-productos">
+                    <img src="./img/lux-spellthief.jpg" alt="Skin Spellthief Lux">
+                    <h3>Lunar Spellthief</h3>
+                    <p>$750</p>
+                    <button class="btn">Agregar al carrito</button>
+                </article>
 
-                <div class="contenedor-skins">
-                    <article class="skins-productos">
-                        <img src="./img/lux-spellthief.jpg" alt="Skin de Lunar Empress Lux">
-                        <h3>Lunar Spellthief</h3>
-                        <p>$750</p>
-                        <button class="btn">Agregar al carrito</button>
-                    </article>
+                <article class="skins-productos">
+                    <img src="./img/lux-sorceress.jpg" alt="Skin Sorceress Lux">
+                    <h3>Lux Sorceress</h3>
+                    <p>$500</p>
+                    <button class="btn">Agregar al carrito</button>
+                </article>
 
-                    <article class="skins-productos">
-                        <img src="./img/lux-sorceress.jpg" alt="Soul Fighter Lux">
-                        <h3>Lux Sorceress</h3>
-                        <p>$500</p>
-                        <button class="btn">Agregar al carrito</button>
-                    </article>
+                <article class="skins-productos">
+                    <img src="./img/lux-imperial.jpg" alt="Skin Imperial Lux">
+                    <h3>Lux Imperial</h3>
+                    <p>$950</p>
+                    <button class="btn">Agregar al carrito</button>
+                </article>
+            </div>
+        </section>
+    </main>
 
-                    <article class="skins-productos">
-                        <img src="./img/lux-imperial.jpg" alt="Skin de Lunar Em">
-                        <h3>Lux Imperial</h3>
-                        <p>$950</p>
-                        <button class="btn">Agregar al carrito</button>
-                    </article>
+    <footer class="footer"> 
+        <nav>
+            <ul>
+                <li>Instagram</li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </footer>
 
-            </section>
-        </main>
-
-
-        <footer class="footer"> 
-            <nav>
-                <ul>
-                    <li>Instagram</li>
-                    <a href="./pages/contacto.html">Contacto</a>
-                    
-                </ul>
-            </nav>
-        </footer>
-    
-    
+    <script src="./js/index.js" type="module"></script>
 </body>
 </html>
-
