@@ -129,10 +129,13 @@ body{
   border-radius: 1rem;
 }
 .btn-eliminar-carrito {
-  background-color: #1d1a20;
-  border: 2px solid #d21f3c;
+  background-color: #f7bb2b;
+  
 }
-
+.btn-eliminar-carrito:hover {
+  background-color: #d21f3c;
+  
+}
 .btn-vaciar-carrito {
   background-color: #f7bb2b;
   color: #1d1a20;
@@ -192,6 +195,12 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 .acciones-carrito {
   margin-top: 2rem;
 }
+.producto-carrito {
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
 
 /* ----------------------------- */
 /*         MEDIA QUERIES        */
