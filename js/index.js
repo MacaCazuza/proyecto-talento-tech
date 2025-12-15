@@ -1,41 +1,47 @@
 import { agregarAlCarrito } from "./funcionesCarrito.js";
 import { obtenerCarrito } from "./storage.js";
-import { actualizarContador, mostrarMensaje } from "./ui.js";
+import { actualizarContador } from "./ui.js";
+
 document.addEventListener("DOMContentLoaded", () => {
-  const contenedores = document.querySelectorAll(".contenedor-skins");
-  const contenedor = contenedores[0]; // usamos SOLO uno
+  const contenedorBest = document.getElementById("contenedor-best");
+  const contenedorCheap = document.getElementById("contenedor-cheapest");
+
 
   const carrito = obtenerCarrito();
   actualizarContador(carrito);
 
   fetch("./data/productos.json")
-    .then(res => res.json())
-    .then(data => {
-      data.forEach(producto => {
+    .then((res) => {
+      if (!res.ok) {
+        throw new Error("Error al cargar productos");
+      }
+      return res.json();
+    })
+    .then((productos) => {
+      productos.forEach((producto) => {
         const tarjeta = document.createElement("article");
         tarjeta.classList.add("skins-productos");
 
-        const img = document.createElement("img");
-        img.src = `./${producto.img}`;
-        img.alt = producto.nombre;
+        tarjeta.innerHTML = `
+          <img src="./${producto.img}" alt="${producto.nombre}">
+          <h3>${producto.nombre}</h3>
+          <p>$${producto.precio}</p>
+          <button class="btn">Agregar al carrito</button>
+        `;
 
-        const titulo = document.createElement("h3");
-        titulo.textContent = producto.nombre;
-
-        const precio = document.createElement("p");
-        precio.textContent = `$${producto.precio}`;
-
-        const boton = document.createElement("button");
-        boton.classList.add("btn");
-        boton.textContent = "Agregar al carrito";
-
+        const boton = tarjeta.querySelector("button");
         boton.addEventListener("click", () => {
           agregarAlCarrito(producto);
           actualizarContador(obtenerCarrito());
         });
 
-        tarjeta.append(img, titulo, precio, boton);
-        contenedor.appendChild(tarjeta);
+
+        if (producto.precio >= 1000) {
+          contenedorBest.appendChild(tarjeta);
+        } else {
+          contenedorCheap.appendChild(tarjeta);
+        }
       });
-    });
+    })
+    .catch((error) => console.error(error));
 });
